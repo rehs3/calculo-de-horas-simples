@@ -1,0 +1,29 @@
+using System;
+using System.Globalization;
+
+namespace exercicio
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Digite o número do fúncionario:");
+            int funcionario = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Digite as horas trabalhadas:");
+            int horas = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Valor recebido por horas trabalhadas");
+            double valor = double.Parse(Console.ReadLine(), CultureInfo.InvariantCulture);
+
+            double total = (valor * horas);
+
+            Console.WriteLine("NUMBER:" + funcionario);
+            Console.WriteLine("SALARY=" + " U& " + total.ToString("F2", CultureInfo.InvariantCulture));
+
+           
+
+
+        }
+    }
+}
